@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashmit | Developer & 3D Designer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="bg-gradient"></div>
+
+    <section id="hero">
+        <div class="hero-content reveal">
+            <h1>Hi, I’m Ashmit</h1>
+            <div class="subtitle">
+                <span id="typewriter"></span><span class="cursor">|</span>
+            </div>
+            <div class="btn-group">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="reveal">About Me</h2>
+        <div class="glass-card reveal" style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8;">
+                I bridge the gap between imagination and reality. As a dual-threat Developer and 3D Model Designer, 
+                I don't just build websites; I craft immersive digital experiences. From pixel-perfect frontend code 
+                to complex Three.js environments, I bring premium, cutting-edge aesthetics to the modern web.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="reveal">My Arsenal</h2>
+        <div class="skills-grid">
+            <div class="glass-card skill-item reveal">🌐 HTML & CSS</div>
+            <div class="glass-card skill-item reveal">⚡ JavaScript ES6+</div>
+            <div class="glass-card skill-item reveal">🧊 Three.js</div>
+            <div class="glass-card skill-item reveal">🎨 UI/UX Design</div>
+            <div class="glass-card skill-item reveal">🏗️ 3D Modeling</div>
+            <div class="glass-card skill-item reveal">🎬 Animation Design</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="reveal">Featured Work</h2>
+        <div class="projects-grid">
+            <div class="glass-card reveal">
+                <div class="project-img"></div>
+                <h3>Cyberpunk E-Commerce</h3>
+                <p style="color: var(--text-muted); margin-top: 10px;">A high-end web store featuring interactive 3D product previews.</p>
+            </div>
+            <div class="glass-card reveal">
+                <div class="project-img"></div>
+                <h3>Abstract Agency Site</h3>
+                <p style="color: var(--text-muted); margin-top: 10px;">A creative agency portfolio utilizing WebGL and smooth scroll parallax.</p>
+            </div>
+            <div class="glass-card reveal">
+                <div class="project-img"></div>
+                <h3>Metaverse UI</h3>
+                <p style="color: var(--text-muted); margin-top: 10px;">Glassmorphism dashboard built for a Web3 digital real estate platform.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="showcase">
+        <div class="showcase-overlay reveal">
+            <h2>Interactive 3D</h2>
+            <p style="color: var(--text-muted);">Move your mouse to interact</p>
+        </div>
+        <div id="canvas-container"></div>
+    </section>
+
+    <section id="contact">
+        <h2 class="reveal">Let's Connect</h2>
+        <form class="contact-form glass-card reveal">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
